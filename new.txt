@@ -8,8 +8,4 @@ Research agent: Run deep research on a topic and get a thorough, well-cited Mark
 Integrated browser updates: Favorite pages for quick access and more options to capture browser screenshots.
 Make sure to join VS Code Live at Build 2026 on June 3!
 
-Happy Coding!
 
-VS Code is rolling out gradually to all users. Use Check for Updates in VS Code to get the latest version immediately.
-
-To try new features as soon as possible, download the nightly Insiders build, which includes the latest updates as soon as they are available.
