@@ -9,3 +9,5 @@ Integrated browser updates: Favorite pages for quick access and more options to 
 Make sure to join VS Code Live at Build 2026 on June 3!
 
 Happy Coding!
+
+Day 2 
