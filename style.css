@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(
+        135deg,
+        #ff9a9e,
+        #fad0c4,
+        #fbc2eb,
+        #a18cd1
+    );
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Side */
+.photo-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-frame {
+    width: 380px;
+    height: 480px;
+    padding: 12px;
+    border-radius: 35px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(20px);
+    border: 3px solid rgba(255,255,255,0.3);
+
+    box-shadow:
+        0 0 25px rgba(255,255,255,0.3),
+        0 0 60px rgba(255,105,180,0.3);
+
+    transition: 0.4s ease;
+}
+
+.photo-frame:hover {
+    transform: scale(1.03);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* Right Side */
+.pin-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pin-card {
+    width: 400px;
+    padding: 50px;
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(25px);
+
+    border: 2px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.15);
+
+    text-align: center;
+}
+
+.pin-card h1 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2.3rem;
+}
+
+.pin-card p {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 25px;
+}
+
+.pin-card input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.pin-card input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.pin-card button {
+    width: 100%;
+    padding: 16px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: linear-gradient(
+        45deg,
+        #ff4d6d,
+        #ff758f
+    );
+
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pin-card button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255,77,109,0.4);
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .photo-frame {
+        width: 280px;
+        height: 360px;
+    }
+
+    .pin-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
